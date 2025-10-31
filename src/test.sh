@@ -11,7 +11,7 @@ expected="Hello, World."
 
 # Compare actual output with expected output
 if [ "$output" == "$expected" ]; then
-  echo "✅ Test passed: Output is correct."
+  echo "✅ Test passed: Output correct."
 else
   echo "❌ Test failed: Expected '$expected' but got '$output'."
   exit 1
