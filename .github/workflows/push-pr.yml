@@ -23,4 +23,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run tests
-        run: echo "tests succeeded"
+        run: npm run test
