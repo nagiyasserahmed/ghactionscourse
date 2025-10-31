@@ -1,4 +1,4 @@
-name: First Work Flow
+name: "First Workflow"
 
 on:
   push:
@@ -9,5 +9,11 @@ jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
-      - name: print a welcome message
+      - name: Print a welcome message
         run: echo "Welcome to our first workflow"
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: List files
+        run: ls -la
